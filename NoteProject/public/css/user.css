@@ -1,0 +1,575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FAFAFA;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+button{
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #C5C5C5;
+    padding: 0px 12px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo{
+    width: 100px;
+padding: 0px 12px;
+}
+.header .headerBtn{
+    display: flex;
+    gap: 7px;
+    padding: 8px;
+  
+    border: 1px solid #C5C5C5;
+    border-radius: 29px;
+    align-items: center;
+
+}
+.header .headerBtn img{
+    width: 22px;
+    height: 22px;
+}
+.header .headerBtn  a{
+    font-weight: 400;
+    color: #4072F3;
+    text-decoration: none;
+}
+
+
+.container{
+margin-left: auto;
+margin-right: auto;
+}
+.loginContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh - 77px);
+    gap: 89px;
+
+}
+.container .welcomeImage {
+    text-align: center;
+    margin-right: 89px;
+}
+.container .welcomeImage img{
+    width: 259px;
+}
+
+
+.container .welcomeImage h3{
+    /* font-family: "Allerta Stencil"; */
+    color: #4171F3;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 64px;
+
+}
+.loginContent .loginForm{
+    background-color: white;
+    border: 1.5px solid #E0E0E0; 
+    border-radius: 21px; 
+    text-align: center;  
+}
+.loginContent .loginForm h2{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 64px;
+    color: #4768F3;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.loginContent .loginForm form ,.changingPassword form{
+    text-align: left; 
+    margin: 0 52px;
+    display: flex;
+    flex-direction: column;
+}
+.loginContent .loginForm form label ,.changingPassword form label{
+   
+font-size: 24px;
+font-weight: 400;
+line-height: 64px;
+color: #777777;
+}
+.loginContent .loginForm form label span{
+    font-size: 15px;
+    color: rgb(255, 63, 63);
+    display: inline-block;
+    margin-left: 5px;
+    /* display: none; */
+}
+.loginContent .loginForm form input,.changingPassword form input{
+    width: 398px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #C5C5C524;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+  
+}
+
+.loginForm form button[type="submit"],.changingPassword form button[type="submit"]{
+    width: 160px;
+    height: 41px;
+    border-radius: 42px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    background-color: #3C7AF3;
+    cursor: pointer;
+    border: none;
+    align-self: center;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.loginForm p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 64px;
+    color: #969696;
+
+}
+.loginForm a{
+font-size: 16px;
+font-weight: 800;
+line-height: 64px;
+color:  #4768F3;
+
+}
+
+@media (max-width:990px) {
+    .loginContent{
+        flex-direction: column;
+    }
+    .container .welcomeImage{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 2px;
+    }
+    .container .welcomeImage img{
+        width: 100px;
+        height: 100px;
+    }
+    .container .welcomeImage h3{
+        display: none;
+    }
+    .loginContent{
+        height: 80vh;
+        gap: 0px;
+    }
+    .container .loginForm h2 , .profile-content h1{
+        font-size: 25px;
+        margin-top: 12px;
+        margin-bottom: 2px;
+    }
+    .container .loginForm form,.changingPassword form{
+        margin: 0 15px;
+        padding: 0 12px;
+    }
+    .container .loginForm form label,.changingPassword form label{
+        font-size: 16px;
+        margin-bottom: -15px;
+        margin-left: 8px;
+    }
+    .container .loginForm form input,.changingPassword form input{
+        width: 287px;
+        height: 34px;
+    }
+    .loginForm form button[type="submit"],.changingPassword form button[type="submit"]{
+        margin-top: 20px;
+        width: 143px;
+        height: 38px;
+        font-size: 16px;
+    }
+   
+}
+.loginForm form input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+
+}
+.loginForm .rememberMe{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+@media (max-width:990px) {
+    .loginForm .rememberMe{
+        gap: 27px;
+    }
+    .loginForm form input[type="checkbox"]{
+        margin-top: 15px;
+    }
+    
+}
+.logoDiv {
+    display: flex;
+    width: 100%;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+}
+.logoDiv img{
+    width: 80px;
+    height: 93.06px;
+}
+.logoDiv h2{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 64px;
+    text-align: center;
+    color:#4171F3 ;
+}
+.landingDiv{
+    background-color: white;
+    display: flex;
+   
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    column-gap: 86px;
+    height: 514px;
+}
+.landingDiv .landingText{
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+
+}
+.smallImage{
+    display: none;
+}
+.smallImage img{
+    display: none;
+}
+.landingText h1{
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    color: #585858;
+}
+.landingText h1 span:first-child{
+    color: #4072F3;
+}
+.landingText h1 span:nth-child(2){
+    color: rgb(0, 38, 126);
+}
+.landingText div p{
+    font-size: 18px;
+    line-height: 38px;
+    text-align: center;
+    font-weight: 400;
+    color: #3C7AF3;
+}
+.landingText div{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+}
+.landingText div .RegisterNow{
+    width: 189px;
+    height: 41px;
+    background-color: #3C7AF3;
+    color: white;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RegisterNow a{ 
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 64px;
+    
+}
+.RegisterNow a:visited,.footer.icon a:visited{
+    color: white;
+}
+.landngImage{
+    display: flex;
+    width: 652px;
+    height: 312px;
+    
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    gap: 23px;
+    height: 76px;
+}
+footer .icon{
+    background-color:#001739 ;
+    border-radius: 31px;
+    width: 129px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+footer .icon img{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+footer .icon a{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 64px;
+}
+@media (max-width:990px) {
+    .landingDiv{
+        flex-direction: column;
+    }
+    .landngImage{
+        display: none;
+
+    }
+    .smallImage{
+        display: block;
+    
+    }
+    .smallImage img{
+        display: block;
+        width: 409px;
+        height: 200px;
+     }
+
+}
+@media (max-width:767px) {
+    .landingDiv{
+        flex-direction: column;
+    }
+    .landngImage{
+        display: none;
+
+    }
+    .smallImage{
+        display: block;
+    
+    }
+    .smallImage img{
+        display: block;
+        width: 300px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     footer{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        color: white;
+        align-items: center;
+        gap: 20px;
+        height: 76px;
+    }
+    footer .icon{
+        background-color:#001739 ;
+        border-radius: 31px;
+        width: 100px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        
+        align-items: center;
+    }
+    footer .icon img{
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .landingText div .RegisterNow{
+        width: 180px;
+        height: 41px;
+        background-color: #3C7AF3;
+        color: white;
+        border-radius: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+    }
+    .landingText div{
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+       
+    }
+    .landingText h1{
+        margin: 0 auto;
+    }
+   
+
+}
+
+.profile-content{
+    margin: 50px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 50px;
+  
+
+
+}
+.profile-pic {
+    background-color: #4171F3;
+    border-radius: 50%;
+    display: flex;
+    
+}
+.profile-pic img{
+    width: 130px;
+    height: 130px;
+}
+.profile-content .info{
+display: flex;
+flex-direction: column;
+row-gap: 20px;
+
+}
+.profile-content .info h4{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.profile-content .info h4 p{
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 9px;
+    color: rgb(0, 205, 0);
+
+}
+.profile-content .info h4 span{
+    color: #585858;
+
+}
+.profile-content .info a{
+    text-decoration: underline;
+}
+.profile-content .info a:visited{
+    color:black;
+}
+.profile-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    align-items: center;
+    gap: 15px;
+}
+#back{
+    background-color: #8C8C8C;
+    color: white;
+    width: 106px;
+    height: 32px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+
+}
+#back a{
+    color:white;
+    text-decoration: none;
+}
+#logout{
+    width: 160px;
+    height: 41px;
+    border-radius: 42px;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 64px;
+    text-align: center;
+    background-color: #4281ff;
+    cursor: pointer;
+    border: none;
+    align-self: center;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logout a{
+    color: white;
+    text-decoration: none;
+}
+.profile-content h1{
+    margin-top: 15px;
+    color: #3C7AF3;
+}
+.changingPassword .btns{
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.changingPassword .btns #back{
+    margin-top: 10px;
+}
+footer p a{
+    color: white;
+    text-decoration: underline;
+}
+footer a:visited{
+    color: white;
+}
+.loginForm h3{
+    color: #00a500;
+
+}
+#backDiv{
+    background-color: #8C8C8C;
+    color: white;
+    width: 106px;
+    height: 32px;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+
+}
+#backDiv a:visited{
+    color: white;
+}
